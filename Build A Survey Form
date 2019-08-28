@@ -1,0 +1,47 @@
+<html>
+    <head>
+    <style>
+    h1{
+  color:red;
+  font-family: Verdana,Arial;
+}
+p{
+  color:pink;
+}
+label{
+    color: blueviolet;
+    font-family: 'Courier New', Courier, monospace;
+    }
+    datalist{
+        color: chocolate;
+    }
+div{
+    color: crimson
+}
+</style>
+    </head>
+    <body bgcolor="purple">
+        <h1 id="title">Survey Form for faceapp</h1>
+        <p id="description">The new faceapp is an app designed to show how a face of a person now will look when that person becomes old.</p>
+        <form  id="survey-form"> 
+        <label  id="name-label">Name:<input type="name" id="name" placeholder="Mariah, Johan" required> </label><br>
+        <label id="email-label">Email ID:<input type="email" id="email" placeholder="abc@abc.com" required></label><br>
+        <label  id="number-label">Number:<input type="number" id="number" placeholder="12345" min="0" max="50"></label><br>
+        <p>Cities you would like to visit:
+        <select id="dropdown" class="dropdown" >
+        <option value="Michigan"  >Michigan</option>
+        <option value="New York">New York</option>
+          <option value="New Jersey">New Jersey</option>
+        </select></p><br>
+        <div> Gender: <input type="radio" name="gender" value="male" checked> Male<br>
+            <input type="radio" name="gender" value="female"> Female<br>
+            <input type="radio" name="gender" value="other"> Other  <br></div>
+        <p>Rate Our site
+            <input type="checkbox" name="nam" value="Attractive">Attractive<br>
+        <input type="checkbox" name="nam" value="Good">Good<br>
+        <input type="checkbox" name="nam" value="Average">Average<br></p>
+        <p>Additional Comments <textarea rows="5" cols="10"></textarea></p>
+        <p><input type="submit" id="submit"></p>
+        </form>
+    </body>
+</html>
