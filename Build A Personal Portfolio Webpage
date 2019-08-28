@@ -1,0 +1,113 @@
+<html>
+    <head>
+    <style>
+    @media (max-width: 75em) {
+  html {
+    font-size: 60%
+  }}
+  .nav {
+  display: flex;
+  justify-content: flex-end;
+  position: fixed;
+  top: 0;
+  right: 500;
+   width: 100%;
+  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
+  z-index: 10;  
+
+}
+  .nav-list {
+  display: flex;
+  margin-right: 2rem;
+}
+
+@media (max-width: 28.75em) {
+  .nav {
+    justify-content: center;
+  }
+
+  .nav-list {
+    margin: 0 1rem;
+  }
+}
+
+.nav-list a {
+  display: block;
+  font-size: 2.2rem;
+  padding: 2rem;
+}
+
+
+ nav ul li a{
+color:chartreuse;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+font-size: 50px
+  }
+  .nav-list a {
+  display: block;
+  font-size: 2.2rem;
+  padding: 2rem;
+}
+  .welcome-section{
+   background-color: #b3b300;
+  height: 100vh;
+     }
+    .welcome-section > p {
+   font-size: 3rem;
+  font-weight: 200;
+     font-style: italic;
+      text-align: justified;
+}
+.container{
+  height:15vh;
+}
+    </style>
+      </head>
+    <body bgcolor="beige">
+      <div class="container">
+            <nav id="navbar" class="nav">
+                    <ul class="nav-list">
+                      <li>
+                        <a href="#welcome-section">About</a>
+                      </li>
+                      <li>
+                        <a href="#projects">Work</a>
+                      </li>
+                      <li>
+                        <a href="#contact">Contact</a>
+                      </li>
+                    </ul>
+        </nav></div>
+                  
+        <section id="welcome-section" class="welcome"><h1>Welcome to My Portfolio Page</h1>
+            <p>Hello, I am Phebe Joshua. An undergraduate student 
+              of Government Engineering College, Trivandrum.</p>
+          
+        </section>
+        <section id="projects"class="projects-section">
+            <h2 class="projects-section-header">These are some of my projects</h2>
+            <div class="projects-grid">
+                <a href="https://codepen.io/PheJo/pen/wVzqWd" target="_blank" class="project project-tile">
+                  <img class="project-image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Mahatma-Gandhi%2C_studio%2C_1931.jpg/220px-Mahatma-Gandhi%2C_studio%2C_1931.jpg" alt="project"/>
+                  <p class="project-title">
+                    <span ></span>
+                    Tribute Page
+                    <span ></span></p></a>
+                <a href="https://codepen.io/PheJo/pen/ymMQGN" target="_blank" class="project project-tile" >
+                  <img class="project-image" src="https://blog.udemy.com/wp-content/uploads/2014/06/1402933795_tmp_shutterstock_173244287-300x205.jpg"
+                    alt="project"/>
+                  <p class="project-title">
+                    <span></span>
+                    Technical Documentation Page
+                    <span></span>
+                  </p>
+                </a>
+          <hr>
+              <span><h2> This is my FCC account: </h2></span>
+          <a id="profile-link" target="_blank" href="https://www.freecodecamp.org/phebej">FCC Account</a>
+        </section>
+           <section id="contact" class="contact-section">
+          <h2>Contact me at : feba.j7@gmail.com </h2>
+        </section>
+    </body>
+</html>
