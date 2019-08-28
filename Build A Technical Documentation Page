@@ -1,0 +1,123 @@
+<html>
+    <head>
+    <style>
+    body {font-family: Inconsolata, sans-serif;}
+header, main { background-color: #fff; padding: 1em;}
+#navbar header{padding: 0; margin-top: 2.6em; text-align:center;font-size: 1.6em; font-weight: bold; text-decoration: none;
+}
+#navbar{
+width: 25%;
+position:fixed;
+}
+h1, section header {background: #ffe;padding-left: .6em;border-top: 1px solid #ccc; border-bottom: 1px solid #ccc;}
+section header {font-weight: bold; font-size: 1.3em; }
+h1 {padding: .6em;}
+nav h1 {background: #ffe; text-decoration: underline; border-radius: 5px; padding: .6em;border-top: 1px solid #999; }
+nav ul li {border-top: 1px solid #999; padding: .5em 2em; background: #ffe; border-radius: 3px 1px;}
+
+main {margin-left: 25%; position: absolute;}
+nav ul {list-style-type: none; padding: 0;}
+nav ul a {text-decoration: none; color: black;}
+ul a:hover {	text-decoration: underline;}
+
+
+pre {
+	white-space: pre-wrap; 
+	background: #eee; 
+	padding: 1em !important; 
+	border: 2px dashed #fff !important; overflow:auto;}
+code {background: #ffe; color: #800;}
+section {padding :.6em;}
+.credits{font-size:0.8em;}
+footer {padding:.5em;}
+
+@media only screen and (max-width:880px){
+	#navbar {position: relative; width: 100%; overflow: auto;}
+	main {margin: 0;}
+}
+    </style>
+    </head>
+    <body>
+             <nav id="navbar">
+                    <header><h1>Some Languages</h1> </header>
+                    <ul>
+                        <a href="#Python" class="nav-link"><li>Python</li></a>
+                        <a href="#HTML" class="nav-link"><li>HTML</li></a>
+                        <a href="#C" class="nav-link"><li>C</li></a>
+                        <a href="#Javascript" class="nav-link"><li>Javascript</li></a>
+                        <a href="#CSS" class="nav-link"><li>CSS</li></a>
+                    </ul>
+                </nav>
+        <main id="main-doc">
+            <section class="main-section" id="Python"><header><h2>Python</h2> </header> 
+            <p>Python is an interpreted, high-level, general-purpose programming language. Created by Guido van Rossum and first released 
+                    in 1991, Python's design philosophy emphasizes code readability with its notable use of significant whitespace.Its language
+                    constructs and object-oriented approach aim to help programmers write clear, logical code for small and large-scale projects.
+            </p>
+            <p> Python is dynamically typed and garbage-collected. It supports multiple programming paradigms, including procedural, 
+                    object-oriented, and functional programming. Python is often described as a "batteries included" language due to its 
+                    comprehensive standard library.Python was conceived in the late 1980s as a successor to the ABC language. 
+            </p><p>Python 2.0,released 2000, introduced features like list comprehensions and a garbage collection system capable of collecting reference
+                    cycles. Python 3.0, released 2008, was a major revision of the language that is not completely backward-compatible, and much 
+                    Python 2 code does not run unmodified on Python 3. Due to concern about the amount of code written for Python 2, support for 
+                    Python 2.7 (the last release in the 2.x series) was extended to 2020. </p>
+            <p>Language developer Guido van Rossum shouldered sole responsibility for the project until July 2018 but now shares his leadership as a member of a five-person steering council.
+                    Python's design offers some support for functional programming in the Lisp tradition. It has <code>filter</code>, 
+                    <code>map</code>,and <code>reduce</code> functions; list comprehensions, dictionaries, sets and generator expressions.The standard library has two modules
+                    (itertools and functools) that implement functional tools borrowed from Haskell and Standard ML
+            </p>
+                <hr>   
+            </section>
+                <section class="main-section" id="HTML"><header><h2>HTML</h2></header>
+                <p>HTML, or HyperText Markup Language, is a markup language used to describe the structure of a web page. It uses a special 
+                    syntax or notation to organize and give information about the page to the browser. Elements usually have opening and closing
+                    tags (eg: <code>&lt;ol&gt;</code> and <code>&lt;/ol&gt;</code> ) that surround and give meaning to content.</p> 
+                   <p>For example,there are different tag options to place around text to show whether it is a heading, a paragraph, or a list.</p>
+                    <p>A paragraph of text. Some information we would like to communicate to the viewer. This can be as long or short as we would like.</p>
+				<ol>
+					<li>Number one on the list</li>
+					<li>Number two</li>
+					<li>A third item</li>
+				</ol>
+				<hr>
+            </section>
+
+            <section class="main-section" id="C"><header><h2>C</h2> </header>
+            <p>C is a procedural programming language. It was initially developed by Dennis Ritchie between 1969 and 1973. It was mainly
+                developed as a system programming language to write operating system. The main features of C language include low-level 
+                access to memory, simple set of keywords, and clean style, these features make C language suitable for system programming like
+                operating system or compiler development.Many later languages have borrowed syntax/features directly or indirectly from C 
+                language. Like syntax of Java, PHP, JavaScript and many other languages is mainly based on C language. C++ is nearly a superset
+                of C language
+            </p>
+                <hr>
+            </section>
+           
+            <section class="main-section" id="Javascript"><header><h2>Javascript</h2> </header>
+            <p>JavaScript is a lightweight, interpreted programming language. It is designed for creating network-centric applications. It is
+                complimentary to and integrated with Java. JavaScript is very easy to implement because it is integrated with HTML. It is open
+                and cross-platform.
+            </p>
+                <hr>
+            </section>
+            <section class="main-section" id="CSS"><header><h2> CSS</h2></header>
+                <p>Cascading Style Sheets (CSS) tell the browser how to display the text and other content that you write in HTML.</p>
+                <p>Note that CSS is case-sensitive so be careful with your capitalization. CSS has been adopted by all major browsers and 
+                    allows you to control:</p>
+                <ul class="disc">
+                    <li>color</li>
+                    <li>fonts</li>
+                    <li>positioning</li>
+                    <li>spacing</li>
+                    <li>sizing</li>
+                    <li>decorations</li>
+                    <li>transitions</li>
+                </ul>
+                <p>There are three main ways to apply CSS styling. You can apply inline styles directly to HTML elements with the 
+                <code>style</code> attribute. Alternatively, you can place CSS rules within <code>style</code> tags in an HTML document.
+                Finally, you can write CSS rules in an external style sheet, then reference that file in the HTML document.</p>
+                <hr>
+            </section>
+        </main>
+    </body>
+</html>
